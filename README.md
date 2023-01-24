@@ -36,11 +36,10 @@ Please contact the author for more information.
 ## Usage 
 
 
-```md
 
 ![CodeSnippet](./assets/screenshot.png)
 
-```
+
 ## Credits
     
 
