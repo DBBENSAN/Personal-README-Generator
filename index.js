@@ -65,7 +65,7 @@ const questions = [
 function writeToFile(answers, data) {
     // console.log(answers)
     let fileName = answers.file
-    // console.log(fileName)
+    // console.log(fileName) 
     fs.appendFile(`${fileName}.md`, data, err => (err) ? console.log(err) : console.log("Success"))
 }
 
