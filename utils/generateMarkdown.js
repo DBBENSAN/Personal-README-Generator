@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === 'other') {
@@ -9,7 +9,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
+// Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'other') {
@@ -37,25 +37,29 @@ function renderLicenseLink(license) {
   else if (license === 'Common Development and Distribution License') {
     return `[Common Development and Distribution License](https://opensource.org/licenses/CDDL-1.0)`
   }
-  else (license === 'Eclipse Public License version 2.0') {
-    return `[Eclipse Public License](https://opensource.org/licenses/EPL-2.0)`
-  }
+  else (license === 'Eclipse Public License version 2.0')
+  return `[Eclipse Public License](https://opensource.org/licenses/EPL-2.0)`
 }
 
 
 
-  // TODO: Create a function that returns the license section of README
-  // If there is no license, return an empty string
-  function renderLicenseSection(license) {
-    return `Read more about ${license} here:`
- }
 
-  // TODO: Create a function to generate markdown for README
-  function generateMarkdown(data) {
-    return `
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  return `Read more about ${license} here:`
+}
+
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+  return `
   # ${data.title}
+
   ## Badges
   ${renderLicenseBadge(data.license)}
+
+
+
   ## Table of Contents
   * [License](#license)
   * [Description](#description)
@@ -91,6 +95,6 @@ function renderLicenseLink(license) {
   ${data.email}
 
 `;
-  }
+}
 
-  module.exports = generateMarkdown;
+module.exports = generateMarkdown;

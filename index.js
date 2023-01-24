@@ -1,6 +1,7 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 
@@ -54,24 +55,26 @@ const questions = [
     },
     {
         type: "input",
-        name: "fileName",
+        name: "file",
         message: "Name the project file:"
     },
 ];
 
 
-// TODO: Create a function to write README file
-function writeToFile(data) {
-    const writeName = data.fileName
-    fs.appendFile(`${writeName}.md`, data, (err) => (err) ? console.log(err) : console.log("Success"))
+// Create a function to write README file
+function writeToFile(answers, data) {
+    // console.log(answers)
+    let fileName = answers.file
+    // console.log(fileName)
+    fs.appendFile(`${fileName}.md`, data, err => (err) ? console.log(err) : console.log("Success"))
 }
 
 // Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((answers) => {
-        console.log(answers)
-        writeToFile(answers)
+        // console.log(answers)
+        writeToFile(answers, generateMarkdown(answers))
     })
 }
 
