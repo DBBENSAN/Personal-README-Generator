@@ -38,7 +38,7 @@ Please contact the author for more information.
 
 ```md
 
-![CodeSnippet](url:https://github.com/DBBENSAN/README-Generator/blob/main/assets/screenshot.png?raw=true)
+![CodeSnippet](./assets/screenshot.png)
 
 ```
 ## Credits
