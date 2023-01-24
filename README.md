@@ -1,4 +1,4 @@
-https://img.shields.io/badge/license-MIT-yellowgreen
+![](https://img.shields.io/badge/license-MIT-yellowgreen)
 
 # Quick ReadMe Generator
 
