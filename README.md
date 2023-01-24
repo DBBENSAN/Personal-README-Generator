@@ -1,3 +1,5 @@
+https://img.shields.io/badge/license-MIT-yellowgreen
+
 # Quick ReadMe Generator
 
 ## Description 
